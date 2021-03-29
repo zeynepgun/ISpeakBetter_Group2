@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="3" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-03-28T23:46:07 EDT" name="Default suite" finished-at="2021-03-28T23:46:21 EDT" duration-ms="13623">
+    <groups>
+    </groups>
+    <test started-at="2021-03-28T23:46:07 EDT" name="Default test" finished-at="2021-03-28T23:46:21 EDT" duration-ms="13623">
+      <class name="tests.HomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomePageTest@71c3b41]" started-at="2021-03-28T23:46:07 EDT" name="setUp" finished-at="2021-03-28T23:46:12 EDT" duration-ms="4571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkFooterLinks()[pri:0, instance:tests.HomePageTest@71c3b41]" started-at="2021-03-28T23:46:12 EDT" name="checkFooterLinks" finished-at="2021-03-28T23:46:16 EDT" duration-ms="4347" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkFooterLinks -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomePageTest@71c3b41]" started-at="2021-03-28T23:46:16 EDT" name="setUp" finished-at="2021-03-28T23:46:21 EDT" duration-ms="4662" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkHomePageURL()[pri:0, instance:tests.HomePageTest@71c3b41]" started-at="2021-03-28T23:46:21 EDT" name="checkHomePageURL" finished-at="2021-03-28T23:46:21 EDT" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkHomePageURL -->
+      </class> <!-- tests.HomePageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

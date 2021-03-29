@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5ea95213-c1c3-4194-a11b-b43ce212eef5" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1pLCayA7Z4OwTnECgetMbEdrIBU" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn install" />
+    </option>
+  </component>
+  <component name="RunManager" selected="TestNG.LoginPageTest.loginTest3">
+    <configuration name="LoginPageTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ISpeakBetter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginPageTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginPageTest (2)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ISpeakBetter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginPageTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginPageTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ISpeakBetter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginPageTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginPageTest.getTitle" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ISpeakBetter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginPageTest" />
+      <option name="METHOD_NAME" value="getTitle" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginPageTest.loginTest3" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ISpeakBetter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.LoginPageTest" />
+      <option name="METHOD_NAME" value="loginTest3" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.LoginPageTest.loginTest3" />
+        <item itemvalue="TestNG.LoginPageTest" />
+        <item itemvalue="TestNG.LoginPageTest.getTitle" />
+        <item itemvalue="TestNG.LoginPageTest (2)" />
+        <item itemvalue="TestNG.LoginPageTest (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5ea95213-c1c3-4194-a11b-b43ce212eef5" name="Default Changelist" comment="" />
+      <created>1614953051154</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614953051154</updated>
+      <workItem from="1614953052523" duration="5986000" />
+      <workItem from="1615912307462" duration="15000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1840" height="322" key="GridCell.Tab.0.bottom" timestamp="1614993528989">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1840" height="261" key="GridCell.Tab.0.bottom/0.23.1920.1008/1920.23.1920.1057@0.23.1920.1008" timestamp="1614957638564" />
+    <state width="1840" height="322" key="GridCell.Tab.0.bottom/0.23.1920.1057/1920.23.1920.1008@0.23.1920.1057" timestamp="1614993528989" />
+    <state width="1840" height="261" key="GridCell.Tab.0.bottom/0.23.1920.1057/1920.23.1920.1057@0.23.1920.1057" timestamp="1614959037222" />
+    <state width="1840" height="322" key="GridCell.Tab.0.center" timestamp="1614993528988">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1840" height="261" key="GridCell.Tab.0.center/0.23.1920.1008/1920.23.1920.1057@0.23.1920.1008" timestamp="1614957638563" />
+    <state width="1840" height="322" key="GridCell.Tab.0.center/0.23.1920.1057/1920.23.1920.1008@0.23.1920.1057" timestamp="1614993528988" />
+    <state width="1840" height="261" key="GridCell.Tab.0.center/0.23.1920.1057/1920.23.1920.1057@0.23.1920.1057" timestamp="1614959037221" />
+    <state width="1840" height="322" key="GridCell.Tab.0.left" timestamp="1614993528988">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1840" height="261" key="GridCell.Tab.0.left/0.23.1920.1008/1920.23.1920.1057@0.23.1920.1008" timestamp="1614957638563" />
+    <state width="1840" height="322" key="GridCell.Tab.0.left/0.23.1920.1057/1920.23.1920.1008@0.23.1920.1057" timestamp="1614993528988" />
+    <state width="1840" height="261" key="GridCell.Tab.0.left/0.23.1920.1057/1920.23.1920.1057@0.23.1920.1057" timestamp="1614959037221" />
+    <state width="1840" height="322" key="GridCell.Tab.0.right" timestamp="1614993528988">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1840" height="261" key="GridCell.Tab.0.right/0.23.1920.1008/1920.23.1920.1057@0.23.1920.1008" timestamp="1614957638563" />
+    <state width="1840" height="322" key="GridCell.Tab.0.right/0.23.1920.1057/1920.23.1920.1008@0.23.1920.1057" timestamp="1614993528988" />
+    <state width="1840" height="261" key="GridCell.Tab.0.right/0.23.1920.1057/1920.23.1920.1057@0.23.1920.1057" timestamp="1614959037221" />
+    <state width="1840" height="322" key="GridCell.Tab.1.bottom" timestamp="1614993528989">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1840" height="322" key="GridCell.Tab.1.bottom/0.23.1920.1057/1920.23.1920.1008@0.23.1920.1057" timestamp="1614993528989" />
+    <state width="1840" height="322" key="GridCell.Tab.1.bottom/0.23.1920.1057/1920.23.1920.1057@0.23.1920.1057" timestamp="1614958060456" />
+    <state width="1840" height="322" key="GridCell.Tab.1.center" timestamp="1614993528989">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1840" height="322" key="GridCell.Tab.1.center/0.23.1920.1057/1920.23.1920.1008@0.23.1920.1057" timestamp="1614993528989" />
+    <state width="1840" height="322" key="GridCell.Tab.1.center/0.23.1920.1057/1920.23.1920.1057@0.23.1920.1057" timestamp="1614958060456" />
+    <state width="1840" height="322" key="GridCell.Tab.1.left" timestamp="1614993528989">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1840" height="322" key="GridCell.Tab.1.left/0.23.1920.1057/1920.23.1920.1008@0.23.1920.1057" timestamp="1614993528989" />
+    <state width="1840" height="322" key="GridCell.Tab.1.left/0.23.1920.1057/1920.23.1920.1057@0.23.1920.1057" timestamp="1614958060456" />
+    <state width="1840" height="322" key="GridCell.Tab.1.right" timestamp="1614993528989">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1840" height="322" key="GridCell.Tab.1.right/0.23.1920.1057/1920.23.1920.1008@0.23.1920.1057" timestamp="1614993528989" />
+    <state width="1840" height="322" key="GridCell.Tab.1.right/0.23.1920.1057/1920.23.1920.1057@0.23.1920.1057" timestamp="1614958060456" />
+    <state x="644" y="249" width="670" height="675" key="run.anything.popup" timestamp="1614953272353">
+      <screen x="0" y="23" width="1920" height="1008" />
+    </state>
+    <state x="644" y="249" width="670" height="675" key="run.anything.popup/0.23.1920.1008/1920.23.1920.1057@0.23.1920.1008" timestamp="1614953272353" />
+  </component>
+</project>
