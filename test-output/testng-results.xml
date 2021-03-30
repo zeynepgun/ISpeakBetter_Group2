@@ -1,29 +1,265 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="3" passed="2" failed="0" skipped="0">
+<testng-results ignored="2" total="12" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-28T23:46:07 EDT" name="Default suite" finished-at="2021-03-28T23:46:21 EDT" duration-ms="13623">
+  <suite started-at="2021-03-30T01:33:23 EDT" name="HomePage Suite" finished-at="2021-03-30T01:35:22 EDT" duration-ms="118556">
     <groups>
     </groups>
-    <test started-at="2021-03-28T23:46:07 EDT" name="Default test" finished-at="2021-03-28T23:46:21 EDT" duration-ms="13623">
+    <test started-at="2021-03-30T01:33:23 EDT" name="HomePage Test" finished-at="2021-03-30T01:35:22 EDT" duration-ms="118556">
       <class name="tests.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomePageTest@71c3b41]" started-at="2021-03-28T23:46:07 EDT" name="setUp" finished-at="2021-03-28T23:46:12 EDT" duration-ms="4571" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomePageTest@52102734]" started-at="2021-03-30T01:33:23 EDT" name="setUp" finished-at="2021-03-30T01:33:28 EDT" duration-ms="4511" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkFooterLinks()[pri:0, instance:tests.HomePageTest@71c3b41]" started-at="2021-03-28T23:46:12 EDT" name="checkFooterLinks" finished-at="2021-03-28T23:46:16 EDT" duration-ms="4347" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkFooterLinks -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomePageTest@71c3b41]" started-at="2021-03-28T23:46:16 EDT" name="setUp" finished-at="2021-03-28T23:46:21 EDT" duration-ms="4662" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="checkHomePageURL()[pri:0, instance:tests.HomePageTest@71c3b41]" started-at="2021-03-28T23:46:21 EDT" name="checkHomePageURL" finished-at="2021-03-28T23:46:21 EDT" duration-ms="14" status="PASS">
+        <test-method signature="checkHomePageURL()[pri:1, instance:tests.HomePageTest@52102734]" started-at="2021-03-30T01:33:28 EDT" name="checkHomePageURL" description="CheckHomePage URL" finished-at="2021-03-30T01:33:28 EDT" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkHomePageURL -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomePageTest@52102734]" started-at="2021-03-30T01:33:28 EDT" name="tearDown" finished-at="2021-03-30T01:33:28 EDT" duration-ms="98" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomePageTest@52102734]" started-at="2021-03-30T01:33:28 EDT" name="setUp" finished-at="2021-03-30T01:33:32 EDT" duration-ms="3875" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkTopNavigationBarItems()[pri:2, instance:tests.HomePageTest@52102734]" started-at="2021-03-30T01:33:32 EDT" name="checkTopNavigationBarItems" description="Clicks on each top Navigation Bar items and checks if each works" finished-at="2021-03-30T01:33:57 EDT" duration-ms="25616" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTopNavigationBarItems -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomePageTest@52102734]" started-at="2021-03-30T01:33:57 EDT" name="tearDown" finished-at="2021-03-30T01:33:57 EDT" duration-ms="182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomePageTest@52102734]" started-at="2021-03-30T01:33:57 EDT" name="setUp" finished-at="2021-03-30T01:34:01 EDT" duration-ms="3823" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkFooterLinks()[pri:3, instance:tests.HomePageTest@52102734]" started-at="2021-03-30T01:34:01 EDT" name="checkFooterLinks" description="Clicks on each link in the footer and checks if each works" finished-at="2021-03-30T01:34:04 EDT" duration-ms="3317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkFooterLinks -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomePageTest@52102734]" started-at="2021-03-30T01:34:04 EDT" name="tearDown" finished-at="2021-03-30T01:34:05 EDT" duration-ms="117" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomePageTest@52102734]" started-at="2021-03-30T01:34:05 EDT" name="setUp" finished-at="2021-03-30T01:34:09 EDT" duration-ms="3771" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkFlexiblePackageInvalidOptions(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:6, instance:tests.HomePageTest@52102734]" started-at="2021-03-30T01:34:09 EDT" name="checkFlexiblePackageInvalidOptions" description="Tries to buy a package with invalid options, should get a warning at the end" data-provider="getFlexiblePackageInValidOptions" finished-at="2021-03-30T01:34:16 EDT" duration-ms="7667" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Select Duration]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2 weeks]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1 Class]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Children English]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkFlexiblePackageInvalidOptions -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomePageTest@52102734]" started-at="2021-03-30T01:34:16 EDT" name="tearDown" finished-at="2021-03-30T01:34:17 EDT" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomePageTest@52102734]" started-at="2021-03-30T01:34:17 EDT" name="setUp" finished-at="2021-03-30T01:34:20 EDT" duration-ms="3811" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkFlexiblePackageInvalidOptions(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:6, instance:tests.HomePageTest@52102734]" started-at="2021-03-30T01:34:20 EDT" name="checkFlexiblePackageInvalidOptions" description="Tries to buy a package with invalid options, should get a warning at the end" data-provider="getFlexiblePackageInValidOptions" finished-at="2021-03-30T01:34:28 EDT" duration-ms="7449" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Select Package Length]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2 Classes]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Business English]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkFlexiblePackageInvalidOptions -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomePageTest@52102734]" started-at="2021-03-30T01:34:28 EDT" name="tearDown" finished-at="2021-03-30T01:34:28 EDT" duration-ms="110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomePageTest@52102734]" started-at="2021-03-30T01:34:28 EDT" name="setUp" finished-at="2021-03-30T01:34:32 EDT" duration-ms="3692" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkFlexiblePackageInvalidOptions(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:6, instance:tests.HomePageTest@52102734]" started-at="2021-03-30T01:34:32 EDT" name="checkFlexiblePackageInvalidOptions" description="Tries to buy a package with invalid options, should get a warning at the end" data-provider="getFlexiblePackageInValidOptions" finished-at="2021-03-30T01:34:39 EDT" duration-ms="7643" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[60]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4 weeks]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Select Class]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Conversational English]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkFlexiblePackageInvalidOptions -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomePageTest@52102734]" started-at="2021-03-30T01:34:39 EDT" name="tearDown" finished-at="2021-03-30T01:34:39 EDT" duration-ms="108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomePageTest@52102734]" started-at="2021-03-30T01:34:39 EDT" name="setUp" finished-at="2021-03-30T01:34:43 EDT" duration-ms="3609" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkFlexiblePackageValidOptions(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:7, instance:tests.HomePageTest@52102734]" started-at="2021-03-30T01:34:43 EDT" name="checkFlexiblePackageValidOptions" description="Tries to buy a package with valid options, signup page should show up at the end" data-provider="getFlexiblePackageValidOptions" finished-at="2021-03-30T01:34:51 EDT" duration-ms="8358" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[60]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2 weeks]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1 Class]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Children English]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkFlexiblePackageValidOptions -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomePageTest@52102734]" started-at="2021-03-30T01:34:51 EDT" name="tearDown" finished-at="2021-03-30T01:34:51 EDT" duration-ms="112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomePageTest@52102734]" started-at="2021-03-30T01:34:51 EDT" name="setUp" finished-at="2021-03-30T01:34:55 EDT" duration-ms="3564" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkFlexiblePackageValidOptions(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:7, instance:tests.HomePageTest@52102734]" started-at="2021-03-30T01:34:55 EDT" name="checkFlexiblePackageValidOptions" description="Tries to buy a package with valid options, signup page should show up at the end" data-provider="getFlexiblePackageValidOptions" finished-at="2021-03-30T01:35:04 EDT" duration-ms="8626" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8 weeks]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[4 Classes]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Business English]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkFlexiblePackageValidOptions -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomePageTest@52102734]" started-at="2021-03-30T01:35:04 EDT" name="tearDown" finished-at="2021-03-30T01:35:04 EDT" duration-ms="113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomePageTest@52102734]" started-at="2021-03-30T01:35:04 EDT" name="setUp" finished-at="2021-03-30T01:35:07 EDT" duration-ms="3692" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkFlexiblePackageValidOptions(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:7, instance:tests.HomePageTest@52102734]" started-at="2021-03-30T01:35:07 EDT" name="checkFlexiblePackageValidOptions" description="Tries to buy a package with valid options, signup page should show up at the end" data-provider="getFlexiblePackageValidOptions" finished-at="2021-03-30T01:35:16 EDT" duration-ms="8270" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[60]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4 weeks]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[2 Classes]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Conversational English]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkFlexiblePackageValidOptions -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomePageTest@52102734]" started-at="2021-03-30T01:35:16 EDT" name="tearDown" finished-at="2021-03-30T01:35:16 EDT" duration-ms="108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomePageTest@52102734]" started-at="2021-03-30T01:35:16 EDT" name="setUp" finished-at="2021-03-30T01:35:19 EDT" duration-ms="3632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkFreeBtn()[pri:8, instance:tests.HomePageTest@52102734]" started-at="2021-03-30T01:35:19 EDT" name="checkFreeBtn" description="checks if try for free button works" finished-at="2021-03-30T01:35:21 EDT" duration-ms="1954" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkFreeBtn -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.HomePageTest@52102734]" started-at="2021-03-30T01:35:21 EDT" name="tearDown" finished-at="2021-03-30T01:35:22 EDT" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- tests.HomePageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- HomePage Test -->
+  </suite> <!-- HomePage Suite -->
 </testng-results>

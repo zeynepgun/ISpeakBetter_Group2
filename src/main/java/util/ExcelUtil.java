@@ -15,14 +15,15 @@ public class ExcelUtil {
 	public static Sheet sheet;
 	
 	
-	public static String TESTDATA_SHEET_DATA = "./src/main/java/testdata/testdataZeynep.xlsx";
+	//public static String TESTDATA_SHEET_DATA = "./src/main/java/testdata/FlexiblePackageInValidOptions.xlsx";
 	
 	
-	public static Object[][] getTestData(String sheetName) {
+	public static Object[][] getTestData(String sheetName, String LocaOfexcellFile) {
 		
 		
 		try {
-			FileInputStream ip = new FileInputStream(TESTDATA_SHEET_DATA);
+			//FileInputStream ip = new FileInputStream(TESTDATA_SHEET_DATA);
+			FileInputStream ip = new FileInputStream(LocaOfexcellFile);
 			book = WorkbookFactory.create(ip);
 			sheet = book.getSheet(sheetName);
 			
