@@ -70,274 +70,93 @@ public class SignUpPage extends BasePage{
 	
 	By errorOk = By.xpath("//button[@type='submit']");
 	
+	By alertMessage = By.id("alertmsg");
 	
 	
 	
 	
 	
-	//Actions
-	public void registerWithValidCredential() throws InterruptedException {
-		
-		elementUtil.waitForElementVisible(signUpLink);
-		elementUtil.doClick(signUpLink);
-		
-		elementUtil.waitForElementPresentBy(signUpLink);
-		
-		elementUtil.waitForElementPresentBy(firstName);
-		
-		elementUtil.doSendKeys(firstName, faker.name().firstName());
-		
-		driver.findElement(lastName).click();
-		//elementUtil.doSendKeys(lastName, "Veli");
-		elementUtil.doSendKeys(lastName, faker.name().lastName());
-		driver.findElement(email).click();
-		//elementUtil.doSendKeys(email, "aliveli@gmail.com");
-		driver.findElement(email).sendKeys(faker.internet().emailAddress());
-		driver.findElement(password).click();
-		elementUtil.doSendKeys(password,"12345");
-		driver.findElement(confirmPwd).click();
-		elementUtil.doSendKeys(confirmPwd, "12345");
-		driver.findElement(country).click();
-		elementUtil.selectDropDownByText(country, "America - America/New_York");
-		driver.findElement(mobileNmr).click();
-		elementUtil.doSendKeys(mobileNmr, faker.phoneNumber().cellPhone());
-		driver.findElement(referralCode).click();
-		elementUtil.doSendKeys(referralCode, "412");
-		driver.findElement(acceptCbox).click();
-		
-		driver.findElement(update).click();
-		driver.findElement(signUpBtn).click();
-		
+	  //Actions
+		public void registerWithValidCredential() throws InterruptedException {
+			FillMandatoryFields(faker.internet().emailAddress(),"12345");
+			FillNonMandatoryFields();
+			FillLastFieldsAndSelectLanguage();
+		}
 
-        elementUtil.waitForElementPresentBy(nativeL);
-		
-		elementUtil.selectDropDownByText(nativeL, "Arabic");
-		driver.findElement(okBtn).click();
-		
-		
-	//	Assert.assertEquals(driver.getTitle(), "ISpeakBetter Online English Center - PAID STUDENTS");
-		
-		
-		
-	}
-	
-	public void signUpWithFacebook() throws InterruptedException{
-		elementUtil.waitForElementVisible(signUpLink);
-		elementUtil.doClick(signUpLink);
-		elementUtil.waitForElementPresentBy(signUpLink);
-		elementUtil.waitForElementPresentBy(faceBk);
-		
-		elementUtil.doClick(faceBk);
-		elementUtil.doSendKeys(faceEmail, "yellowpink663@gmail.com");
-		elementUtil.doSendKeys(facePwd, "pyellow145&");
-		elementUtil.doClick(faceBtn);
-	    String text =	driver.findElement(error).getText();
-	    Assert.assertEquals(text, "Feature Unavailable: Facebook Login is currently unavailable for this app.");
-	    elementUtil.doClick(errorOk);
-		
-		
-	
-		//String alert = elementUtil.getAlertText(driver);
-		//Assert.assertEquals(alert, "Feature Unavailable: Facebook Login is currently unavailable for this app.");
-		
-	
-		
-	}
-	
-	public WebElement clickOnSignLink() throws InterruptedException {
-		return driver.findElement(signUpLink);
-	}
-	
-	public WebElement getEmail() {
-	
-		return driver.findElement(email);
-	}
-	
-	public WebElement clickOnSignUpBtn() {
-		return driver.findElement(signUpBtn);
-	}
-	
-	public void registerWithInvalidEmail() {
-		elementUtil.waitForElementVisible(signUpLink);
-		elementUtil.doClick(signUpLink);
-		
-		elementUtil.waitForElementPresentBy(signUpLink);
-		
-		elementUtil.waitForElementPresentBy(firstName);
-		
-		elementUtil.doSendKeys(firstName, faker.name().firstName());
-		
-		driver.findElement(lastName).click();
-		//elementUtil.doSendKeys(lastName, "Veli");
-		elementUtil.doSendKeys(lastName, faker.name().lastName());
-		driver.findElement(email).click();
-		//elementUtil.doSendKeys(email, "aliveli@gmail.com");
-		driver.findElement(email).sendKeys(faker.internet().emailAddress());
-		driver.findElement(password).click();
-		elementUtil.doSendKeys(password,"12345");
-		driver.findElement(confirmPwd).click();
-		elementUtil.doSendKeys(confirmPwd, "12345");
-		driver.findElement(country).click();
-		elementUtil.selectDropDownByText(country, "America - America/New_York");
-		driver.findElement(mobileNmr).click();
-		elementUtil.doSendKeys(mobileNmr, faker.phoneNumber().cellPhone());
-		driver.findElement(referralCode).click();
-		elementUtil.doSendKeys(referralCode, "412");
-		driver.findElement(acceptCbox).click();
-		
-		driver.findElement(update).click();
-		driver.findElement(signUpBtn).click();
-		
+		public String signUpWithFacebook() throws InterruptedException {
+			elementUtil.waitForElementVisible(signUpLink);
+			elementUtil.doClick(signUpLink);
+			elementUtil.waitForElementPresentBy(signUpLink);
+			elementUtil.waitForElementPresentBy(faceBk);
+			elementUtil.doClick(faceBk);
+			elementUtil.doSendKeys(faceEmail, "yellowpink663@gmail.com");
+			elementUtil.doSendKeys(facePwd, "pyellow145&");
+			elementUtil.doClick(faceBtn);
+			return driver.getTitle();
+		}
 
-        elementUtil.waitForElementPresentBy(nativeL);
-		
-		elementUtil.selectDropDownByText(nativeL, "Arabic");
-		driver.findElement(okBtn).click();
-		
-		
-		Assert.assertEquals(driver.getTitle(), "ISpeakBetter Online English Center - PAID STUDENTS");
-		
-	}
-	
-	public void registerWithExistingEmailAddress() throws InterruptedException{
-		elementUtil.waitForElementVisible(signUpLink);
-		elementUtil.doClick(signUpLink);
-		
-		elementUtil.waitForElementPresentBy(signUpLink);
-		
-		elementUtil.waitForElementPresentBy(firstName);
-		
-		elementUtil.doSendKeys(firstName, faker.name().firstName());
-		
-		driver.findElement(lastName).click();
-		//elementUtil.doSendKeys(lastName, "Veli");
-		elementUtil.doSendKeys(lastName, faker.name().lastName());
-		driver.findElement(email).click();
-		elementUtil.doSendKeys(email, "aliveli@gmail.com");
-		//driver.findElement(email).sendKeys(faker.internet().emailAddress());
-		driver.findElement(password).click();
-		elementUtil.doSendKeys(password,"12345");
-		driver.findElement(confirmPwd).click();
-		elementUtil.doSendKeys(confirmPwd, "12345");
-		driver.findElement(country).click();
-		elementUtil.selectDropDownByText(country, "America - America/New_York");
-		driver.findElement(mobileNmr).click();
-		elementUtil.doSendKeys(mobileNmr, faker.phoneNumber().cellPhone());
-		driver.findElement(referralCode).click();
-		elementUtil.doSendKeys(referralCode, "412");
-		driver.findElement(acceptCbox).click();
-		
-		driver.findElement(update).click();
-		driver.findElement(signUpBtn).click();
-		
+		public String registerWithInvalidEmail(String email) {
+			FillMandatoryFields(email,"12345");
+			FillNonMandatoryFields();
+			driver.findElement(acceptCbox).click();
+			driver.findElement(update).click();
+			driver.findElement(signUpBtn).click();
+	        return driver.findElement(alertMessage).getText();
+		}
 
-       elementUtil.waitForElementPresentBy(nativeL);
-		
-		elementUtil.selectDropDownByText(nativeL, "Arabic");
-		driver.findElement(okBtn).click();
-		
-		
-		Assert.assertEquals(driver.getTitle(), "ISpeakBetter Online English Center - PAID STUDENTS");
-		
-		
-	}
-	
-	public void registerWithMandotoryField() throws InterruptedException{
-		elementUtil.waitForElementVisible(signUpLink);
-		elementUtil.doClick(signUpLink);
-		
-		elementUtil.waitForElementPresentBy(signUpLink);
-		
-		elementUtil.waitForElementPresentBy(firstName);
-		
-		elementUtil.doSendKeys(firstName, faker.name().firstName());
-		
-		driver.findElement(lastName).click();
-		//elementUtil.doSendKeys(lastName, "Veli");
-		elementUtil.doSendKeys(lastName, faker.name().lastName());
-		driver.findElement(email).click();
-		//elementUtil.doSendKeys(email, "aliveli@gmail.com");
-		driver.findElement(email).sendKeys(faker.internet().emailAddress());
-		driver.findElement(password).click();
-		elementUtil.doSendKeys(password,"12345");
-		driver.findElement(confirmPwd).click();
-		elementUtil.doSendKeys(confirmPwd, "12345");
-		//driver.findElement(country).click();
-		//elementUtil.selectDropDownByText(country, "America - America/New_York");
-		//driver.findElement(mobileNmr).click();
-		//elementUtil.doSendKeys(mobileNmr, faker.phoneNumber().cellPhone());
-		//driver.findElement(referralCode).click();
-		//elementUtil.doSendKeys(referralCode, "412");
-		
-		driver.findElement(acceptCbox).click();
-		
-		
-		driver.findElement(update).click();
-		driver.findElement(signUpBtn).click();
-		
-		elementUtil.waitForElementVisible(nativeL);
-        elementUtil.waitForElementPresentBy(nativeL);
-		
-		elementUtil.selectDropDownByText(nativeL, "Arabic");
-		driver.findElement(okBtn).click();
-		
-		
-		Assert.assertEquals(driver.getTitle(), "ISpeakBetter Online English Center - PAID STUDENTS");
-		
-	}
-	
-	public void registerWithoutAlphanumericPwd() throws InterruptedException{
-		
-		elementUtil.waitForElementVisible(signUpLink);
-		elementUtil.doClick(signUpLink);
-		
-		elementUtil.waitForElementPresentBy(signUpLink);
-		
-		elementUtil.waitForElementPresentBy(firstName);
-		
-		elementUtil.doSendKeys(firstName, faker.name().firstName());
-		
-		driver.findElement(lastName).click();
-		//elementUtil.doSendKeys(lastName, "Veli");
-		elementUtil.doSendKeys(lastName, faker.name().lastName());
-		driver.findElement(email).click();
-		//elementUtil.doSendKeys(email, "aliveli@gmail.com");
-		driver.findElement(email).sendKeys(faker.internet().emailAddress());
-		driver.findElement(password).click();
-		elementUtil.doSendKeys(password,"HelloWorld");
-		driver.findElement(confirmPwd).click();
-		elementUtil.doSendKeys(confirmPwd, "HelloWorld");
-		driver.findElement(country).click();
-		elementUtil.selectDropDownByText(country, "America - America/New_York");
-		driver.findElement(mobileNmr).click();
-		elementUtil.doSendKeys(mobileNmr, faker.phoneNumber().cellPhone());
-		driver.findElement(referralCode).click();
-		elementUtil.doSendKeys(referralCode, "412");
-		driver.findElement(acceptCbox).click();
-		
-		driver.findElement(update).click();
-		driver.findElement(signUpBtn).click();
-		
+		public String registerWithExistingEmailAddress() throws InterruptedException {
+			FillMandatoryFields("aliveli@gmail.com", "12345");
+			FillNonMandatoryFields();
+			driver.findElement(acceptCbox).click();
+			driver.findElement(update).click();
+			driver.findElement(signUpBtn).click();
+	        return driver.findElement(alertMessage).getText();
+		}
 
-        elementUtil.waitForElementPresentBy(nativeL);
-		
-		elementUtil.selectDropDownByText(nativeL, "Arabic");
-		driver.findElement(okBtn).click();
-		
-		
-		Assert.assertEquals(driver.getTitle(), "ISpeakBetter Online English Center - PAID STUDENTS");
-		
-	}
-	
-	
-	
+		public void registerWithMandotoryField() throws InterruptedException {
+			FillMandatoryFields(faker.internet().emailAddress(),"12345");
+			FillLastFieldsAndSelectLanguage();
+		}
 
+		public void registerWithoutAlphanumericPwd() throws InterruptedException {
+	        FillMandatoryFields(faker.internet().emailAddress(), "HelloWorld");
+			FillNonMandatoryFields();
+			FillLastFieldsAndSelectLanguage();
+		}
 		
+		public void FillMandatoryFields(String e_mail, String pwd) {
+			
+			elementUtil.waitForElementVisible(signUpLink);
+			elementUtil.doClick(signUpLink);
+			elementUtil.waitForElementPresentBy(signUpLink);
+			elementUtil.waitForElementPresentBy(firstName);
+			elementUtil.doSendKeys(firstName, faker.name().firstName());
+			driver.findElement(lastName).click();
+			elementUtil.doSendKeys(lastName, faker.name().lastName());
+			driver.findElement(email).click();
+			driver.findElement(email).sendKeys(e_mail);
+			driver.findElement(password).click();
+			elementUtil.doSendKeys(password, pwd);
+			driver.findElement(confirmPwd).click();
+			elementUtil.doSendKeys(confirmPwd, pwd);
+			elementUtil.selectDropDownByText(country, "America - America/New_York");
+			driver.findElement(mobileNmr).click();
+		}
 		
+		public void FillNonMandatoryFields() {
+			driver.findElement(mobileNmr).click();
+			elementUtil.doSendKeys(mobileNmr, faker.phoneNumber().cellPhone());
+			driver.findElement(referralCode).click();
+			elementUtil.doSendKeys(referralCode, "412");
+		}
 		
-		
-		
-		
-	
-	
-}
+		public void FillLastFieldsAndSelectLanguage() {
+			driver.findElement(acceptCbox).click();
+			driver.findElement(update).click();
+			driver.findElement(signUpBtn).click();
+			elementUtil.waitForElementVisible(nativeL);
+			elementUtil.waitForElementPresentBy(nativeL);
+			elementUtil.selectDropDownByText(nativeL, "Arabic");
+			driver.findElement(okBtn).click();
+		}
+	}
