@@ -1,29 +1,127 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="3" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-28T23:46:07 EDT" name="Default suite" finished-at="2021-03-28T23:46:21 EDT" duration-ms="13623">
+  <suite started-at="2021-04-01T15:43:41 EDT" name="Default suite" finished-at="2021-04-01T15:45:14 EDT" duration-ms="93188">
     <groups>
     </groups>
-    <test started-at="2021-03-28T23:46:07 EDT" name="Default test" finished-at="2021-03-28T23:46:21 EDT" duration-ms="13623">
-      <class name="tests.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomePageTest@71c3b41]" started-at="2021-03-28T23:46:07 EDT" name="setUp" finished-at="2021-03-28T23:46:12 EDT" duration-ms="4571" status="PASS">
+    <test started-at="2021-04-01T15:43:41 EDT" name="Default test" finished-at="2021-04-01T15:45:14 EDT" duration-ms="93188">
+      <class name="tests.CoursesPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CoursesPageTest@2cdd0d4b]" started-at="2021-04-01T15:43:41 EDT" name="setUp" finished-at="2021-04-01T15:43:46 EDT" duration-ms="5434" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkFooterLinks()[pri:0, instance:tests.HomePageTest@71c3b41]" started-at="2021-03-28T23:46:12 EDT" name="checkFooterLinks" finished-at="2021-03-28T23:46:16 EDT" duration-ms="4347" status="PASS">
+        <test-method signature="checkCoursesText()[pri:1, instance:tests.CoursesPageTest@2cdd0d4b]" started-at="2021-04-01T15:43:46 EDT" name="checkCoursesText" description="This test check to be at courses section" finished-at="2021-04-01T15:43:52 EDT" duration-ms="5513" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkFooterLinks -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomePageTest@71c3b41]" started-at="2021-03-28T23:46:16 EDT" name="setUp" finished-at="2021-03-28T23:46:21 EDT" duration-ms="4662" status="PASS">
+        </test-method> <!-- checkCoursesText -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CoursesPageTest@2cdd0d4b]" started-at="2021-04-01T15:43:52 EDT" name="tearDown" finished-at="2021-04-01T15:43:52 EDT" duration-ms="758" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CoursesPageTest@2cdd0d4b]" started-at="2021-04-01T15:43:52 EDT" name="setUp" finished-at="2021-04-01T15:43:57 EDT" duration-ms="4355" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkHomePageURL()[pri:0, instance:tests.HomePageTest@71c3b41]" started-at="2021-03-28T23:46:21 EDT" name="checkHomePageURL" finished-at="2021-03-28T23:46:21 EDT" duration-ms="14" status="PASS">
+        <test-method signature="checkConversationalEnglishPageText()[pri:2, instance:tests.CoursesPageTest@2cdd0d4b]" started-at="2021-04-01T15:43:57 EDT" name="checkConversationalEnglishPageText" description="This test check to be at Conversational English section" finished-at="2021-04-01T15:44:04 EDT" duration-ms="7363" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkHomePageURL -->
-      </class> <!-- tests.HomePageTest -->
+        </test-method> <!-- checkConversationalEnglishPageText -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CoursesPageTest@2cdd0d4b]" started-at="2021-04-01T15:44:04 EDT" name="tearDown" finished-at="2021-04-01T15:44:05 EDT" duration-ms="726" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CoursesPageTest@2cdd0d4b]" started-at="2021-04-01T15:44:05 EDT" name="setUp" finished-at="2021-04-01T15:44:09 EDT" duration-ms="4406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkFreeCourseSignUpPage()[pri:3, instance:tests.CoursesPageTest@2cdd0d4b]" started-at="2021-04-01T15:44:09 EDT" name="checkFreeCourseSignUpPage" description="This test check to login for free class sign up page" finished-at="2021-04-01T15:44:20 EDT" duration-ms="10270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkFreeCourseSignUpPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CoursesPageTest@2cdd0d4b]" started-at="2021-04-01T15:44:20 EDT" name="tearDown" finished-at="2021-04-01T15:44:20 EDT" duration-ms="736" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CoursesPageTest@2cdd0d4b]" started-at="2021-04-01T15:44:21 EDT" name="setUp" finished-at="2021-04-01T15:44:25 EDT" duration-ms="4198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="signUpForFreeCourses(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:tests.CoursesPageTest@2cdd0d4b]" started-at="2021-04-01T15:44:25 EDT" name="signUpForFreeCourses" description="This test check to enable to add credantials sign up page for free class" data-provider="getFaceBookOptions" finished-at="2021-04-01T15:44:47 EDT" duration-ms="22247" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ali]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Tezel]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Atezel@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Ali1234!]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Ali1234!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpForFreeCourses -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CoursesPageTest@2cdd0d4b]" started-at="2021-04-01T15:44:47 EDT" name="tearDown" finished-at="2021-04-01T15:44:48 EDT" duration-ms="757" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.CoursesPageTest@2cdd0d4b]" started-at="2021-04-01T15:44:48 EDT" name="setUp" finished-at="2021-04-01T15:44:53 EDT" duration-ms="4880" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="signUpForFreeCourses(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:tests.CoursesPageTest@2cdd0d4b]" started-at="2021-04-01T15:44:53 EDT" name="signUpForFreeCourses" description="This test check to enable to add credantials sign up page for free class" data-provider="getFaceBookOptions" finished-at="2021-04-01T15:45:13 EDT" duration-ms="20310" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Memet ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Genis]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Mgenis21@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Memo123!]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Memo123!]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpForFreeCourses -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.CoursesPageTest@2cdd0d4b]" started-at="2021-04-01T15:45:13 EDT" name="tearDown" finished-at="2021-04-01T15:45:14 EDT" duration-ms="752" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.CoursesPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
