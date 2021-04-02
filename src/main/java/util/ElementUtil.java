@@ -72,7 +72,7 @@ public class ElementUtil extends BasePage {
 	 */
 
 	public void waitForElementPresentBy(By locator) {
-		WebDriverWait wait = new WebDriverWait(driver, 20);
+		WebDriverWait wait = new WebDriverWait(driver, 30);
 		wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 	}
 

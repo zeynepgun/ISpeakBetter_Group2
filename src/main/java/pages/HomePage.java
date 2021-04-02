@@ -140,20 +140,19 @@ public class HomePage {
 	
 	
 	public String selectDurationOption(String text){
-		try {
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
 	    //JavaScriptUtil.scrollDownSpecific(driver);
-		JavaScriptUtil.scrollIntoView(driver.findElement(duration_dd), driver);
-		//elementUtil.waitForElementPresentBy(duration_dd);
+		//JavaScriptUtil.scrollIntoView(driver.findElement(duration_dd), driver);
+		
+		//JavaScriptUtil.clickElementByJS(elementUtil.getElement(duration_dd), driver);
+		
+		elementUtil.waitForElementPresentBy(duration_dd);
 		return elementUtil.selectandGetDropDownByText(duration_dd, text);
 	}
 	
 	public String selectSubscribedClassesOption(String text) {
 		elementUtil.waitForElementPresentBy(subscribed_dd);
+		//JavaScriptUtil.clickElementByJS(elementUtil.getElement(subscribed_dd), driver);
 		return elementUtil.selectandGetDropDownByText(subscribed_dd, text);
 	}
 	

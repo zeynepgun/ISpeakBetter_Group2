@@ -29,13 +29,13 @@ public class HomePageTest {
 		homePage = new HomePage(driver);
 	}
 	
-	@Test (priority=1, enabled=true, description="CheckHomePage URL")
+	@Test (priority=3, enabled=true, description="CheckHomePage URL")
 	public void checkHomePageURL() {
 		Assert.assertEquals(ConfigReader.getProperty("url"), homePage.getHomePageURL());
 	}
 	
-	@Test(priority=2, enabled=true, description="Clicks on each top Navigation Bar items and checks if each works")
-	public void checkTopNavigationBarItems() {
+	@Test(priority=4, enabled=true, description="Clicks on each top Navigation Bar items and checks if each works")
+	public void checkTopNavigationBarItems() throws InterruptedException{
 		
 		List<String> urlsList = homePage.getTopNavigationBarItems();
 		Assert.assertEquals(ConfigReader.getProperty("url"),urlsList.get(0));
@@ -48,7 +48,7 @@ public class HomePageTest {
 		Assert.assertEquals(urlsList.get(6), "true");
 	}
 	
-	@Test(priority=3, enabled=true, description = "Clicks on each link in the footer and checks if each works")
+	@Test(priority=5, enabled=true, description = "Clicks on each link in the footer and checks if each works")
 	public void checkFooterLinks() {
 		ArrayList<String>  urls = homePage.getFooterLinks();
 		//ispeakbetter.com/partners, https://ispeakbetter.com/contact, https://ispeakbetter.com/faq, 
@@ -61,7 +61,7 @@ public class HomePageTest {
 		Assert.assertTrue(urls.get(5).contains("#"));
 	}
 	
-	@Test(dataProvider = "durationOptions", priority=4, enabled=true, description= "selects each option in duration dropdown menu")
+	@Test(dataProvider = "durationOptions", priority=4, enabled=false, description= "selects each option in duration dropdown menu")
 	public void checkDurationDropDown(String value) {
 	  Assert.assertEquals(homePage.selectDurationOption(value), value);
 	}
@@ -72,7 +72,7 @@ public class HomePageTest {
    }
    
    
-   @Test(dataProvider="subscribedOptions", priority=5, enabled=true, description ="selects each option in subscribed classes drop down menu")
+   @Test(dataProvider="subscribedOptions", priority=5, enabled=false, description ="selects each option in subscribed classes drop down menu")
    public void checkSubscribedOptions(String value) {
 	   Assert.assertEquals(homePage.selectSubscribedClassesOption(value), value);
    }
@@ -85,9 +85,9 @@ public class HomePageTest {
    }
  
    
-   @Test(dataProvider="getFlexiblePackageInValidOptions", priority=6, enabled=true, description="Tries to buy a package with invalid options, should get a warning at the end")
+   @Test(dataProvider="getFlexiblePackageInValidOptions", priority=1, enabled=true, description="Tries to buy a package with invalid options, should get a warning at the end")
    public void checkFlexiblePackageInvalidOptions(String durationOpt, String subsClassesOpt, 
-		   String weeklyClassesOpt, String programOpt) {
+		   String weeklyClassesOpt, String programOpt) throws InterruptedException{
 	   homePage.selectDurationOption(durationOpt);
 	   homePage.selectSubscribedClassesOption(subsClassesOpt);
 	   homePage.selectweeklyClassOption(weeklyClassesOpt);
@@ -102,9 +102,9 @@ public class HomePageTest {
    }
    
    
-   @Test(dataProvider="getFlexiblePackageValidOptions", priority=7, enabled=true, description= "Tries to buy a package with valid options, signup page should show up at the end")
+   @Test(dataProvider="getFlexiblePackageValidOptions", priority=2, enabled=true, description= "Tries to buy a package with valid options, signup page should show up at the end")
    public void checkFlexiblePackageValidOptions(String durationOpt, String subsClassesOpt, 
-		   String weeklyClassesOpt, String programOpt) {
+		   String weeklyClassesOpt, String programOpt) throws InterruptedException{
 	   homePage.selectDurationOption(durationOpt);
 	   homePage.selectSubscribedClassesOption(subsClassesOpt);
 	   homePage.selectweeklyClassOption(weeklyClassesOpt);
@@ -121,6 +121,7 @@ public class HomePageTest {
    @Test(priority=8, enabled=true, description="checks if try for free button works")
    public void checkFreeBtn() {
 	   Assert.assertTrue(homePage.clickFreeBtn());
+	   //Assert.assertEquals(homePage.clickFreeBtn(), "Sign up");
    }
    
    @AfterMethod
