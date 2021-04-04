@@ -77,15 +77,14 @@ public class HomePage {
 			String itemxpath = topNaviBarItemBeforeXpath + i + "]";
 			By loca = By.xpath(itemxpath);
 			if (elementUtil.isElementEnabled(loca)) {
-				System.out.println("navigation bar item " + i + " visible");
+			//	System.out.println("navigation bar item " + i + " visible");
 				elementUtil.doClick(loca);
 				urls.add(elementUtil.doGetPageUrl());
 				System.out.println("Clicked on navigation bar item " + i);
 				// after each click, should go back to homepage to click other items on
-				// navigation bar
 				elementUtil.launchURL(ConfigReader.getProperty("url"));
 			} else {
-				System.out.println("item " + i + " is not visible in navigation bar");
+			//	System.out.println("item " + i + " is not visible in navigation bar");
 			}
 		}
 		// 6 th item is just |, so skipped it

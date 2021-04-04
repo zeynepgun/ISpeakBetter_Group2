@@ -11,7 +11,7 @@ import base.BasePage;
 import pages.SignUpPage;
 
 public class SignUpPageTest {
-	WebDriver driver;
+	public WebDriver driver;
 	BasePage basePage;
 	SignUpPage signUpPage;
 //Properties properties;

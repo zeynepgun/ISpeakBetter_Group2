@@ -18,7 +18,7 @@ import util.ExcelUtil;
 public class HomePageTest {
 
 	
-	WebDriver driver;
+	public WebDriver driver;
 	BasePage basePage;
 	HomePage homePage;
 	
@@ -29,12 +29,12 @@ public class HomePageTest {
 		homePage = new HomePage(driver);
 	}
 	
-	@Test (priority=3, enabled=true, description="CheckHomePage URL")
+	@Test (priority=1, enabled=true, description="CheckHomePage URL")
 	public void checkHomePageURL() {
 		Assert.assertEquals(ConfigReader.getProperty("url"), homePage.getHomePageURL());
 	}
 	
-	@Test(priority=4, enabled=true, description="Clicks on each top Navigation Bar items and checks if each works")
+	@Test(priority=2, enabled=true, description="Clicks on each top Navigation Bar items and checks if each works")
 	public void checkTopNavigationBarItems() throws InterruptedException{
 		
 		List<String> urlsList = homePage.getTopNavigationBarItems();
@@ -48,7 +48,7 @@ public class HomePageTest {
 		Assert.assertEquals(urlsList.get(6), "true");
 	}
 	
-	@Test(priority=5, enabled=true, description = "Clicks on each link in the footer and checks if each works")
+	@Test(priority=3, enabled=true, description = "Clicks on each link in the footer and checks if each works")
 	public void checkFooterLinks() {
 		ArrayList<String>  urls = homePage.getFooterLinks();
 		//ispeakbetter.com/partners, https://ispeakbetter.com/contact, https://ispeakbetter.com/faq, 
@@ -85,7 +85,7 @@ public class HomePageTest {
    }
  
    
-   @Test(dataProvider="getFlexiblePackageInValidOptions", priority=1, enabled=true, description="Tries to buy a package with invalid options, should get a warning at the end")
+   @Test(dataProvider="getFlexiblePackageInValidOptions", priority=6, enabled=true, description="Tries to buy a package with invalid options, should get a warning at the end")
    public void checkFlexiblePackageInvalidOptions(String durationOpt, String subsClassesOpt, 
 		   String weeklyClassesOpt, String programOpt) throws InterruptedException{
 	   homePage.selectDurationOption(durationOpt);
@@ -102,7 +102,7 @@ public class HomePageTest {
    }
    
    
-   @Test(dataProvider="getFlexiblePackageValidOptions", priority=2, enabled=true, description= "Tries to buy a package with valid options, signup page should show up at the end")
+   @Test(dataProvider="getFlexiblePackageValidOptions", priority=7, enabled=true, description= "Tries to buy a package with valid options, signup page should show up at the end")
    public void checkFlexiblePackageValidOptions(String durationOpt, String subsClassesOpt, 
 		   String weeklyClassesOpt, String programOpt) throws InterruptedException{
 	   homePage.selectDurationOption(durationOpt);
@@ -123,6 +123,8 @@ public class HomePageTest {
 	   Assert.assertTrue(homePage.clickFreeBtn());
 	   //Assert.assertEquals(homePage.clickFreeBtn(), "Sign up");
    }
+   
+   
    
    @AfterMethod
    public void tearDown() {

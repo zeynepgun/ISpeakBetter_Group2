@@ -12,10 +12,10 @@
       </class> <!-- tests.SignUpPageTest -->
       <class name="tests.HomePageTest">
         <methods>
-          <include name="checkDurationDropDown" invocation-numbers="0 1 2"/>
+          <include name="checkTopNavigationBarItems"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="checkSubscribedOptions" invocation-numbers="0 1 2"/>
+          <include name="checkFooterLinks"/>
         </methods>
       </class> <!-- tests.HomePageTest -->
     </classes>

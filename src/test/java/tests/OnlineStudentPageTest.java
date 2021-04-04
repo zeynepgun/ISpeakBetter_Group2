@@ -10,7 +10,7 @@ import pages.OnlineStudentPage;
 
 public class OnlineStudentPageTest {
 
-	WebDriver driver;
+	public WebDriver driver;
 	BasePage basePage;
 	LoginPage loginPage;
 	OnlineStudentPage onlineStudentPage;

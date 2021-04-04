@@ -15,7 +15,7 @@ import util.Constants;
 
 public class LoginPageTest {
 	
-	WebDriver driver;
+	public WebDriver driver;
 	BasePage basePage;
 	LoginPage loginPage;
 	
@@ -31,15 +31,9 @@ public class LoginPageTest {
 		System.out.println(title);
 		Assert.assertEquals(title, Constants.LOGIN_PAGE_TITLE_STRING);
 	}
-	@Test(priority = 2, enabled = true, description = "flexible package")
-	public void flexiblePackage() {
-		Assert.assertEquals(loginPage.duration(), "60");
-		Assert.assertEquals(loginPage.subscribed(), "2 weeks");
-		Assert.assertEquals(loginPage.weeklyClass(), "2 Classes");
-		Assert.assertEquals(loginPage.program(), "Conversational English");
-	}
 	
-	@Test(priority = 3, enabled = false, description = "login system in I Speak Better")
+	
+	@Test(priority = 2, enabled = true, description = "login system in I Speak Better")
 	public void testLogin() throws InterruptedException {
 		loginPage.doLogin(ConfigReader.getProperty("username"), ConfigReader.getProperty("password"));
 		Thread.sleep(3000);
