@@ -1,5 +1,6 @@
 package listeners;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -7,9 +8,14 @@ import java.nio.file.Paths;
 import java.util.Calendar;
 import java.util.Date;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import org.testng.Reporter;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -91,9 +97,27 @@ public class ExtentReportListener extends BasePage implements ITestListener {
 
 	public synchronized void onTestFailure(ITestResult result) {
 		System.out.println((result.getMethod().getMethodName() + " failed!"));
+		
+		try {
+			driver = (WebDriver) result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
+		} catch(Exception e) {
+		
+			System.out.println("did not find the driver from screenshot class");
+			e.printStackTrace();
+		}
+            File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+    		String path = System.getProperty("user.dir")+ "/screenshots/" + System.currentTimeMillis()+ ".png";
+    		File destination = new File(path);
+    		
+    		try {
+    			FileUtils.copyFile(scrFile, destination);
+    		} catch (IOException e) {
+    			System.err.println("screenshot captured failed...");
+    		}
+       
 		try {
 			test.get().fail(result.getThrowable(),
-					MediaEntityBuilder.createScreenCaptureFromPath("/Users/ahmetcturk/git/OrangeHRM/OrangeHRM2021/build").build());
+					MediaEntityBuilder.createScreenCaptureFromPath(path).build());
 		
 		} catch (IOException e) {
 			System.err

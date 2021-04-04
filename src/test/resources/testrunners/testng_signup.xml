@@ -4,6 +4,7 @@
 <listeners>
 		
 		<listener class-name="listeners.ScreenshotListener" />
+		<listener class-name="listeners.ExtentReportListener" />
 	
 	</listeners>
 
