@@ -13,7 +13,7 @@ import base.BasePage;
 import base.ConfigReader;
 import pages.LoginPage;
 import util.Constants;
-@Listeners(listeners.ExtentReportListener.class)
+//@Listeners(listeners.ExtentReportListener.class)
 public class LoginPageTest {
 	
 	public WebDriver driver;

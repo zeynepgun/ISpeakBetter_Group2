@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import base.BasePage;
 import pages.SignUpPage;
-@Listeners(listeners.ExtentReportListener.class)
+//@Listeners(listeners.ExtentReportListener.class)
 public class SignUpPageTest {
 	public WebDriver driver;
 	BasePage basePage;
