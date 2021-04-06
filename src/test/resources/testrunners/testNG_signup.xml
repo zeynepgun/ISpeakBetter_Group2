@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="AllTests Suite">
+<suite name="SignUp Suite">
 <listeners>
 		
 		<listener class-name="listeners.ScreenshotListener" />
 	    <listener class-name="listeners.ExtentReportListener" />
 	</listeners>
 
-  <test name="All Pages Test">
+  <test name="SignUp Test">
     <classes>
       
       <class name="tests.SignUpPageTest"/>
-      <class name="tests.CoursesPageTest"/>
-      <class name="tests.LoginPageTest"/>
-      <class name="tests.HomePageTest"/>
      
     </classes>
   </test> <!-- Test -->

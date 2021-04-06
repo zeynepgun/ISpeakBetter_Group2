@@ -1,0 +1,5 @@
+tests/LoginPageTest.class
+tests/SignUpPageTest.class
+tests/OnlineStudentPageTest.class
+tests/HomePageTest.class
+tests/CoursesPageTest.class

@@ -5,7 +5,7 @@
     <listener class-name="listeners.ScreenshotListener"/>
     <listener class-name="listeners.ExtentReportListener"/>
   </listeners>
-  <test thread-count="5" name="SignUp Page Test(failed)">
+  <test thread-count="5" name="All Pages Test(failed)">
     <classes>
       <class name="tests.SignUpPageTest">
         <methods>
@@ -15,5 +15,5 @@
         </methods>
       </class> <!-- tests.SignUpPageTest -->
     </classes>
-  </test> <!-- SignUp Page Test(failed) -->
+  </test> <!-- All Pages Test(failed) -->
 </suite> <!-- Failed suite [HomePage Suite] -->

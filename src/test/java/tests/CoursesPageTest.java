@@ -16,7 +16,7 @@ import pages.LoginPage;
 import util.ExcelUtil;
 import util.JavaScriptUtil;
 
-//@Listeners(listeners.ExtentReportListener.class)
+@Listeners(listeners.ExtentReportListener.class)
 public class CoursesPageTest {
 
 	

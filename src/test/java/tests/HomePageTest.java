@@ -15,7 +15,7 @@ import base.BasePage;
 import base.ConfigReader;
 import pages.HomePage;
 import util.ExcelUtil;
-//@Listeners(listeners.ExtentReportListener.class)
+@Listeners(listeners.ExtentReportListener.class)
 public class HomePageTest {
 
 	
