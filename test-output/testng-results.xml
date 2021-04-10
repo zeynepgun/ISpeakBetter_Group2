@@ -1,29 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="3" passed="2" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-28T23:46:07 EDT" name="Default suite" finished-at="2021-03-28T23:46:21 EDT" duration-ms="13623">
+  <suite name="Default suite" duration-ms="98202" started-at="2021-04-09T21:46:30 EDT" finished-at="2021-04-09T21:48:08 EDT">
     <groups>
     </groups>
-    <test started-at="2021-03-28T23:46:07 EDT" name="Default test" finished-at="2021-03-28T23:46:21 EDT" duration-ms="13623">
-      <class name="tests.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomePageTest@71c3b41]" started-at="2021-03-28T23:46:07 EDT" name="setUp" finished-at="2021-03-28T23:46:12 EDT" duration-ms="4571" status="PASS">
+    <test name="Default test" duration-ms="98202" started-at="2021-04-09T21:46:30 EDT" finished-at="2021-04-09T21:48:08 EDT">
+      <class name="tests.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.LoginPageTest@5a1c0542]" name="setUp" is-config="true" duration-ms="11302" started-at="2021-04-09T21:46:30 EDT" finished-at="2021-04-09T21:46:41 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkFooterLinks()[pri:0, instance:tests.HomePageTest@71c3b41]" started-at="2021-03-28T23:46:12 EDT" name="checkFooterLinks" finished-at="2021-03-28T23:46:16 EDT" duration-ms="4347" status="PASS">
+        <test-method status="PASS" signature="testPageTitle()[pri:1, instance:tests.LoginPageTest@5a1c0542]" name="testPageTitle" duration-ms="1589" started-at="2021-04-09T21:46:41 EDT" description="I Speak Better Login Page title" finished-at="2021-04-09T21:46:43 EDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkFooterLinks -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.HomePageTest@71c3b41]" started-at="2021-03-28T23:46:16 EDT" name="setUp" finished-at="2021-03-28T23:46:21 EDT" duration-ms="4662" status="PASS">
+        </test-method> <!-- testPageTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.LoginPageTest@5a1c0542]" name="tearDown" is-config="true" duration-ms="382" started-at="2021-04-09T21:46:43 EDT" finished-at="2021-04-09T21:46:43 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.LoginPageTest@5a1c0542]" name="setUp" is-config="true" duration-ms="8508" started-at="2021-04-09T21:46:43 EDT" finished-at="2021-04-09T21:46:52 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="checkHomePageURL()[pri:0, instance:tests.HomePageTest@71c3b41]" started-at="2021-03-28T23:46:21 EDT" name="checkHomePageURL" finished-at="2021-03-28T23:46:21 EDT" duration-ms="14" status="PASS">
+        <test-method status="PASS" signature="testLogin()[pri:2, instance:tests.LoginPageTest@5a1c0542]" name="testLogin" duration-ms="14307" started-at="2021-04-09T21:46:52 EDT" description="Login the system in I Speak Better" finished-at="2021-04-09T21:47:06 EDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkHomePageURL -->
-      </class> <!-- tests.HomePageTest -->
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.LoginPageTest@5a1c0542]" name="tearDown" is-config="true" duration-ms="479" started-at="2021-04-09T21:47:06 EDT" finished-at="2021-04-09T21:47:07 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.LoginPageTest@5a1c0542]" name="setUp" is-config="true" duration-ms="9337" started-at="2021-04-09T21:47:07 EDT" finished-at="2021-04-09T21:47:16 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testLogwrongun()[pri:3, instance:tests.LoginPageTest@5a1c0542]" name="testLogwrongun" duration-ms="12152" started-at="2021-04-09T21:47:16 EDT" description="Login with incorrect email correct pw" finished-at="2021-04-09T21:47:28 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogwrongun -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.LoginPageTest@5a1c0542]" name="tearDown" is-config="true" duration-ms="338" started-at="2021-04-09T21:47:28 EDT" finished-at="2021-04-09T21:47:28 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.LoginPageTest@5a1c0542]" name="setUp" is-config="true" duration-ms="7310" started-at="2021-04-09T21:47:28 EDT" finished-at="2021-04-09T21:47:36 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testLogwrongpw()[pri:4, instance:tests.LoginPageTest@5a1c0542]" name="testLogwrongpw" duration-ms="11800" started-at="2021-04-09T21:47:36 EDT" description="Login with correct email incorrect pw" finished-at="2021-04-09T21:47:47 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogwrongpw -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.LoginPageTest@5a1c0542]" name="tearDown" is-config="true" duration-ms="289" started-at="2021-04-09T21:47:47 EDT" finished-at="2021-04-09T21:47:48 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.LoginPageTest@5a1c0542]" name="setUp" is-config="true" duration-ms="7648" started-at="2021-04-09T21:47:48 EDT" finished-at="2021-04-09T21:47:55 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testLogwrongunpw()[pri:5, instance:tests.LoginPageTest@5a1c0542]" name="testLogwrongunpw" duration-ms="12308" started-at="2021-04-09T21:47:55 EDT" description="Login with incorrect email incorrect pw" finished-at="2021-04-09T21:48:08 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogwrongunpw -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:tests.LoginPageTest@5a1c0542]" name="tearDown" is-config="true" duration-ms="280" started-at="2021-04-09T21:48:08 EDT" finished-at="2021-04-09T21:48:08 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -11,7 +11,7 @@ import util.JavaScriptUtil;
 
 public class LoginPage extends BasePage{
 	
-	WebDriver driver;
+	public WebDriver driver;
 	ElementUtil elementUtil;
 	
 	//Constructor
@@ -21,7 +21,7 @@ public class LoginPage extends BasePage{
 	}
 	
 	//Locators 
-
+    By wronglogin = By.xpath("//*[@id='crendentialsError']");
 	By clickLogin = By.id("cmdSiginLink");
 	By email = By.xpath("//input[@id='_email']");
 	By password  = By.id("_password");
@@ -36,37 +36,17 @@ public class LoginPage extends BasePage{
 	//Page Actions (Methods)
 	
 	public String getPageTitle() {
-		return elementUtil.waitForGetPageTitle(Constants.LOGIN_PAGE_TITLE_STRING);
+		elementUtil.waitForElementPresentBy(clickLogin);
+		elementUtil.doClick(clickLogin);
+		elementUtil.waitForElementPresentBy(clickSignin);
+		elementUtil.waitForGetPageTitle(Constants.LOGIN_PAGE_TITLE_STRING);
+		return driver.getTitle();
+
 	}
 	
-	public String duration() {
-		JavaScriptUtil.scrollDownSpecific(driver);
-		elementUtil.waitForElementPresentBy(duration);
-		elementUtil.doClick(duration);
-		return elementUtil.selectSingleValue(driver, list, "60");
-	}
-	
-	public String subscribed() {
-		elementUtil.waitForElementPresentBy(subscribed);
-		elementUtil.doClick(subscribed);
-		return elementUtil.selectSingleValue(driver, list, "2 weeks");
-	}
-	
-	public String weeklyClass() {
-		elementUtil.waitForElementPresentBy(weeklyClass);
-		elementUtil.doClick(weeklyClass);
-		return elementUtil.selectSingleValue(driver, list, "2 Classes");
-	}
-	
-	public String program() {
-		elementUtil.waitForElementPresentBy(program);
-		elementUtil.doClick(program);
-		return elementUtil.selectSingleValue(driver, list, "Conversational English");
-	}
-	
-	
-	public void doLogin(String username, String pwd) {
-		
+
+	public String doLogin(String username, String pwd) throws InterruptedException {
+		elementUtil.waitForElementPresentBy(clickLogin);
 		elementUtil.doClick(clickLogin);
 		elementUtil.waitForElementPresentBy(clickSignin);
 		elementUtil.doClick(clickSignin);
@@ -76,7 +56,28 @@ public class LoginPage extends BasePage{
 		elementUtil.doSendKeys(password, pwd);
 		elementUtil.waitForElementPresentBy(login);
 		elementUtil.doClick(login);
+		Thread.sleep(3000);
+		elementUtil.waitForGetPageTitle(Constants.MAIN_PAGE_TITLE_STRING);
+		return driver.getTitle();
 	
 	}
+	public String wrongLogin(String username, String pwd) throws InterruptedException {
+		elementUtil.waitForElementPresentBy(clickLogin);
+		elementUtil.doClick(clickLogin);
+		elementUtil.waitForElementPresentBy(clickSignin);
+		elementUtil.doClick(clickSignin);
+		elementUtil.isElementEnabled(email);
+		elementUtil.doSendKeys(email, username);
+		elementUtil.waitForElementPresentBy(password);
+		elementUtil.doSendKeys(password, pwd);
+		elementUtil.waitForElementPresentBy(login);
+		elementUtil.doClick(login);
+		Thread.sleep(3000);
+		elementUtil.waitForElementPresentBy(wronglogin);
+		return driver.findElement(wronglogin).getText();
+
+
+	}
+	
 
 }
